@@ -910,9 +910,19 @@
       "platform": "linux",
       "env": [
         {
-          "BACKUP_FILE": "/data/db_backup/backup.sqlite3",
-          "CRON_TIME": "0 5 * * *",
-          "DELETE_AFTER": "0"
+          "name": "backup_file",
+          "label": "backup_file",
+          "default": "/data/db_backup/backup.sqlite3"
+        },
+        {
+          "name": "Cron Time",
+          "label": "cron_time",
+          "default": "0 5 * * *",
+        },
+        {
+          "name": "Delete After",
+          "label": "DELETE_AFTER",
+          "default": "0"
         }
         ]
     },
