@@ -907,6 +907,7 @@
       ],
       "restart_policy": "always",
       "command": "--volumes-from=bitwarden",
+      "platform": "linux",
       "env": [
         {
           "BACKUP_FILE": "/data/db_backup/backup.sqlite3",
