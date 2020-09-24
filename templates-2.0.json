@@ -906,7 +906,6 @@
         "Tools"
       ],
       "restart_policy": "always",
-      "command": "--volumes-from=bitwarden",
       "platform": "linux",
       "volumes": [
         {
