@@ -896,7 +896,7 @@
     },
     {
       "type": 1,
-      "title": "Bitwarden Backup",
+      "title": "BitwardenRS Backup",
       "name": "bitwarden_backup",
       "description": "A Docker container that backs up another bitwardenrs container's SQLite database.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bitwarden.png",
