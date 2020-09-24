@@ -1485,7 +1485,7 @@
     "platform": "linux",
     "repository": {
       "url": "https://github.com/SelfhostedPro/selfhosted_templates",
-      "stackfile": "Template/Stack/invoice-ninja.yml"
+      "stackfile": "stacks/invoice-ninja.yml"
     },
     "env": [
       {
@@ -2216,7 +2216,7 @@
     "platform": "linux",
     "repository": {
       "url": "https://github.com/SelfhostedPro/selfhosted_templates",
-      "stackfile": "Template/Stack/nextcloud.yml"
+      "stackfile": "stacks/nextcloud.yml"
     },
     "env": [
       {
@@ -2612,7 +2612,7 @@
     "platform": "linux",
     "repository": {
       "url": "https://github.com/SelfhostedPro/selfhosted_templates",
-      "stackfile": "Template/Stack/bookstack.yml"
+      "stackfile": "stacks/bookstack.yml"
     },
     "env": [
       {
@@ -3787,7 +3787,7 @@
     "platform": "linux",
     "repository": {
       "url": "https://github.com/SelfhostedPro/selfhosted_templates",
-      "stackfile": "Template/Stack/pritunl.yml"
+      "stackfile": "stacks/pritunl.yml"
     },
     "env": [
       {
