@@ -911,13 +911,13 @@
       "env": [
         {
           "name": "backup_file",
-          "label": "backup_file",
+          "label": "BACKUP_FILE",
           "default": "/data/db_backup/backup.sqlite3"
         },
         {
           "name": "Cron Time",
-          "label": "cron_time",
-          "default": "0 5 * * *",
+          "label": "CRON_TIME",
+          "default": "0 5 * * *"
         },
         {
           "name": "Delete After",
