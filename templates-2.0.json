@@ -912,7 +912,9 @@
         {
           "BACKUP_FILE": "/data/db_backup/backup.sqlite3",
           "CRON_TIME": "0 5 * * *",
-          "DELETE_AFTER": "0",
+          "DELETE_AFTER": "0"
+        }
+        ]
     },
     {
       "type": 1,
