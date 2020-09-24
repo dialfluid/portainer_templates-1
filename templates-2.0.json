@@ -908,11 +908,25 @@
       "restart_policy": "always",
       "command": "--volumes-from=bitwarden",
       "platform": "linux",
+      "volumes": [
+        {
+          "container": "/config",
+          "bind": "/portainer/Files/AppData/Config/Bitwarden-rs"
+        },
+        {
+          "container": "/data",
+          "bind": "/portainer/Files/AppData/Config/Bitwarden-rs/data"
+        },
+        {
+          "container": "/backup",
+          "bind": "/home/andy/backup"
+        }
+      ],
       "env": [
         {
           "name": "BACKUP_FILE",
           "label": "BACKUP_FILE",
-          "default": "/data/db_backup/backup.sqlite3"
+          "default": "/backup/bitwarden.sqlite3"
         },
         {
           "name": "CRON_TIME",
