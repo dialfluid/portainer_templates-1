@@ -938,7 +938,8 @@
           "name": "DOMAIN",
           "label": "DOMAIN",
           "default": "bw.domain.com"
-        }        
+        } 
+      ]
     },
     {
       "type": 1,
