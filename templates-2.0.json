@@ -1245,7 +1245,7 @@
   {
     "type": 1,
     "title": "Bitwarden RS",
-    "name": "bitwardenrs",
+    "name": "bitwarden",
     "description": "This is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal..",
     "note": "This project is not associated with the Bitwarden project nor 8bit Solutions LLC.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bitwarden.png",
@@ -1263,9 +1263,39 @@
       {
         "container": "/config",
         "bind": "/portainer/Files/AppData/Config/Bitwarden-rs"
-      }
+      },
+	    {
+		    "container": "/data",
+		    "bind": "/portainer/Files/AppData/Config/Bitwarden-rs/data"
+	    }
     ]
   },
+  {
+	  "type": 1,
+	  "title": "Bitwarden Backup",
+	  "name": "bitwarden_backup"
+	  "description": "A Docker container that backs up another bitwardenrs container's SQLite database.",
+	  "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bitwarden.png",
+	  "image": "bruceforce/bw_backup",
+	  "categories": [
+	  	"Other".
+	  	"Tools"
+	  ],
+	  "restart_policy": "unless-stopped",
+	  "volumes": [
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/Bitwarden-rs"
+      },
+      {
+	"container": "/data",
+	"bind": "/portainer/Files/AppData/Config/Bitwarden-rs/data"
+      }
+    ]
+},
+	  
+
+			      
   {
     "type": 1,
     "title": "Booksonic",
