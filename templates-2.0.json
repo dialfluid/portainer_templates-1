@@ -1278,7 +1278,7 @@
 	  "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bitwarden.png",
 	  "image": "bruceforce/bw_backup",
 	  "categories": [
-	  	"Other".
+	  	"Other",
 	  	"Tools"
 	  ],
 	  "restart_policy": "unless-stopped",
