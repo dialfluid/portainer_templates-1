@@ -933,12 +933,7 @@
           "name": "SMTP_PASSWORD",
           "label": "SMTP_PASSWORD",
           "default": "password_here"
-        },
-        {
-          "name": "DOMAIN",
-          "label": "DOMAIN",
-          "default": "https://bw.domain.com"
-        } 
+        }
       ]
     },
     {
