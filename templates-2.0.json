@@ -937,7 +937,7 @@
         {
           "name": "DOMAIN",
           "label": "DOMAIN",
-          "default": "bw.domain.com"
+          "default": "https://bw.domain.com"
         } 
       ]
     },
