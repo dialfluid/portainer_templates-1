@@ -895,14 +895,14 @@
       ],
       "env": [
         {
-          "name": "SIGNUPS_ALLOWED",
-          "label": "SIGNUPS_ALLOWED",
-          "default": "false"
-        },
-        {
           "name": "ADMIN_TOKEN",
           "label": "ADMIN_TOKEN",
           "default": "some_really_long_key"
+        },
+        {
+          "name": "DOMAIN",
+          "label": "DOMAIN",
+          "default": "https://bw.domain.com"
         }
       ]
     },
