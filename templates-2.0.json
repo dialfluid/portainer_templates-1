@@ -2347,19 +2347,23 @@
         },
         {
           "name": "TZ",
-          "label": "TZ"
+          "label": "TZ",
+          "default": "Europe/London"
         },
         {
           "name": "DATABASE_PASSWORD",
-          "label": "DATABASE_PASSWORD"
+          "label": "DATABASE_PASSWORD",
+          "default": "YW94PzLyxyYqK9"
         },
         {
           "name": "MYSQL_ROOT_PASSWORD",
-          "label": "MYSQL_ROOT_PASSWORD"
+          "label": "MYSQL_ROOT_PASSWORD",
+          "default": "2AZ7RqzVEzpqoQ6uxfDeyh33a7cAac"
         },
         {
           "name": "PORT",
-          "label": "PORT"
+          "label": "PORT",
+          "default": "3540"
         }
       ]
     },
