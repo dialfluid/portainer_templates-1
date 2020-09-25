@@ -903,36 +903,6 @@
           "name": "ADMIN_TOKEN",
           "label": "ADMIN_TOKEN",
           "default": "some_really_long_key"
-        },
-        {
-          "name": "DISABLE_ADMIN_TOKEN",
-          "label": "DISABLE_ADMIN_TOKEN",
-          "default": "false"
-        },
-        {
-          "name": "SMTP_HOST",
-          "label": "SMTP_HOST",
-          "default": "eagle.mxlogin.com"
-        },
-        {
-          "name": "SMTP_FROM",
-          "label": "SMTP_FROM",
-          "default": "bitwarden-rs@domain.com"
-        },
-        {
-          "name": "SMTP_PORT",
-          "label": "SMTP_PORT",
-          "default": "465"
-        },
-        {
-          "name": "SMTP_USERNAME",
-          "label": "SMTP_USERNAME",
-          "default": "user@email.com"
-        },
-        {
-          "name": "SMTP_PASSWORD",
-          "label": "SMTP_PASSWORD",
-          "default": "password_here"
         }
       ]
     },
