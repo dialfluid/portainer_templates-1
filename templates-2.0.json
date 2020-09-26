@@ -4342,7 +4342,7 @@
           "bind": "/portainer/Comics"
         },
         {
-          "container": "/config"
+          "container": "/config",
           "bind": "/portainer/AppData/Ubookquity/Config
         }
       ],
