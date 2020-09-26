@@ -28,6 +28,4 @@ services:
       - MYSQL_PASSWORD=projectsend #optional
     volumes:
       - /portainer/Files/AppData/Config/Mariadb-projectsend:/config
-    ports:
-      - ${SQLPORT}:3306
     restart: unless-stopped
