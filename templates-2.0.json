@@ -1169,7 +1169,7 @@
       "note": "The database user is invoice_ninja and the database is ninja_db. Please generate an app key following the documentation <a href='https://github.com/invoiceninja/dockerfiles'>here</a>. ",
       "platform": "linux",
       "repository": {
-        "url": "https://github.com/SelfhostedPro/selfhosted_templates",
+        "url": "https://github.com/andyyanguk/selfhosted_templates",
         "stackfile": "stacks/invoice-ninja.yml"
       },
       "env": [
@@ -1900,7 +1900,7 @@
       "note": "The database user is nextcloud and the database is nextcloud_db. The host of the database will be located at the bottom of the DB conotainer in portainer.",
       "platform": "linux",
       "repository": {
-        "url": "https://github.com/SelfhostedPro/selfhosted_templates",
+        "url": "https://github.com/andyyanguk/selfhosted_templates",
         "stackfile": "stacks/nextcloud.yml"
       },
       "env": [
@@ -3475,7 +3475,7 @@
       "note": "Documentation on this containier can be found here: <a href=https://hub.docker.com/r/goofball222/pritunl>https://hub.docker.com/r/goofball222/pritunl</a>",
       "platform": "linux",
       "repository": {
-        "url": "https://github.com/SelfhostedPro/selfhosted_templates",
+        "url": "https://github.com/andyyanguk/selfhosted_templates",
         "stackfile": "stacks/pritunl.yml"
       },
       "env": [
