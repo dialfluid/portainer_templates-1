@@ -3429,7 +3429,7 @@
         {
           "name": "PORT",
           "label": "PORT",
-          "default": "8010"
+          "default": "8918"
         },
         {
           "name": "SQLPORT",
