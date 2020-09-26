@@ -13,7 +13,7 @@ services:
       - /portainer/Files/AppData/Config/ProjectSend:/config #Config Volume Goes Here
       - /portainer/Files/AppData/ProjectSend:/data #File Storage Volume Goes Here
     ports:
-      - 8010:80
+      - ${PORT}:80
     restart: unless-stopped
   db:
     image: linuxserver/mariadb
@@ -29,5 +29,5 @@ services:
     volumes:
       - /portainer/Files/AppData/Config/Mariadb-projectsend:/config
     ports:
-      - 3310:3306
+      - ${SQLPORT}:3306
     restart: unless-stopped
