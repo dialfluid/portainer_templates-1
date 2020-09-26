@@ -3430,11 +3430,6 @@
           "name": "PORT",
           "label": "PORT",
           "default": "8918"
-        },
-        {
-          "name": "SQLPORT",
-          "label": "SQLPORT",
-          "default": "3010"
         }
       ]
     },
