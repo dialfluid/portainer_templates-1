@@ -1,0 +1,33 @@
+---
+version: "2.1"
+services:
+  projectsend:
+    image: linuxserver/projectsend
+    container_name: projectsend
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=Europe/London
+      - MAX_UPLOAD=${MAX_UPLOAD}
+    volumes:
+      - /portainer/Files/AppData/Config/ProjectSend:/config #Config Volume Goes Here
+      - /portainer/Files/AppData/ProjectSend:/data #File Storage Volume Goes Here
+    ports:
+      - 8010:80
+    restart: unless-stopped
+  db:
+    image: linuxserver/mariadb
+    container_name: mariadb-projectsend
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - MYSQL_ROOT_PASSWORD=projectsend
+      - TZ=Europe/London
+      - MYSQL_DATABASE=projectsend #optional
+      - MYSQL_USER=projectsend #optional
+      - MYSQL_PASSWORD=projectsend #optional
+    volumes:
+      - /portainer/Files/AppData/Config/Mariadb-projectsend:/config
+    ports:
+      - 3310:3306
+    restart: unless-stopped
