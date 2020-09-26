@@ -17,12 +17,12 @@ services:
     restart: unless-stopped
   db:
     image: linuxserver/mariadb
-    container_name: mariadb-projectsend
+    container_name: projectsend_db
     environment:
       - PUID=${PUID}
       - PGID=${PGID}
-      - MYSQL_ROOT_PASSWORD=projectsend
       - TZ=Europe/London
+      - MYSQL_ROOT_PASSWORD=projectsend
       - MYSQL_DATABASE=projectsend #optional
       - MYSQL_USER=projectsend #optional
       - MYSQL_PASSWORD=projectsend #optional
