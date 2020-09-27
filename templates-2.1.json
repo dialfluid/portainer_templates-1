@@ -2689,7 +2689,7 @@
       "volumes": [
         {
           "container": "/config",
-          "bind": "/portainer/AppData/Nginx-Proxy/Data"
+          "bind": "/portainer/AppData/Nginx-Proxy/Config"
         }
       ]
     },
