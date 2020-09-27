@@ -4343,7 +4343,7 @@
         },
         {
           "container": "/config",
-          "bind": "/portainer/AppData/Ubookquity/Config
+          "bind": "/portainer/AppData/Ubookquity/Config"
         }
       ],
       "env": [
