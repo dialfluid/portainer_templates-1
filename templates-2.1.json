@@ -1324,13 +1324,20 @@
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/ghost.png",
       "image": "ghost:latest",
       "ports": [
-        "2368/tcp"
+        "8091:2368/tcp"
       ],
       "volumes": [
         {
           "container": "/var/lib/ghost/content"
         }
-      ]
+      ],
+      "env": [
+        {
+          "name": "URL",
+          "label": "URL",
+          "default": "https://mydomain.com"
+        }
+        ]
     },
     {
       "type": 1,
