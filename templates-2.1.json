@@ -1333,9 +1333,9 @@
       ],
       "env": [
         {
-          "name": "URL",
-          "label": "URL",
-          "default": "https://mydomain.com"
+          "name": "url",
+          "label": "url",
+          "default": "http://mydomain.com"
         }
         ]
     },
