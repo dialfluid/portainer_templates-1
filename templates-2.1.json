@@ -2077,6 +2077,50 @@
         }
       ]
     },
+    {    
+      "type": 3,
+      "title": "Matomo",
+      "name": "matomo",
+      "description": "Analytics tool",
+      "categories": [
+        "Cloud",
+        "Productivity",
+        "Tools",
+        "Other"
+      ],
+      "platform": "linux",
+      "repository": {
+        "url": "https://github.com/andyyanguk/portainer_templates",
+        "stackfile": "stacks/matomo.yml"
+      },
+      "env": [
+        {
+          "name": "PUID",
+          "label": "PUID",
+          "default": "1000"
+        },
+        {
+          "name": "PGID",
+          "label": "PGID",
+          "default": "100"
+        },
+        {
+          "name": "DB_PASSWORD",
+          "label": "DB_PASSWORD",
+          "default": "m2fe4L9U!Pz^eQxxG4r$cWTs@ELfiE&u"
+        },
+        {
+          "name": "DB_ROOT_PASSWORD",
+          "label": "DB_ROOT_PASSWORD",
+          "default": "p%e^LwtYRyZGKDeS&a2saoa4ks#okXLw"
+        },
+        {
+          "name": "PORT",
+          "label": "PORT",
+          "default": "8089"
+        }
+      ]
+    },
     {
       "type": 1,
       "title": "Mautic",
