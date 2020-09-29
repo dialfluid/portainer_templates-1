@@ -3535,6 +3535,45 @@
       ]
     },
     {
+      "title": "Seafile",
+      "type": 1,
+      "categories": [
+        "Cloud",
+        "Productivity",
+        "Tools",
+        "Other",
+        "Web"
+      ],
+      "platform": "linux",
+      "image": "seafileltd/seafile:latest",
+      "ports": [
+        "8313:80/tcp"
+        ],
+      "env": [
+        {
+          "name": "SEAFILE_SERVER_HOSTNAME",
+          "label": "SEAFILE_SERVER_HOSTNAME",
+          "default": "seafile.domain.com"
+        },
+        {
+          "name": "SEAFILE_ADMIN_EMAIL",
+          "label": "SEAFILE_ADMIN_EMAIL",
+          "default": "admin@domain.com"
+        },
+        {
+          "name": "SEAFILE_ADMIN_PASSWORD",
+          "label": "SEAFILE_ADMIN_PASSWORD",
+          "default": "super_secret_password"
+        }
+        ],
+      "volumes": [
+        {
+          "container": "/shared",
+          "bind": "/home/andy/Seafile"
+        }
+        ]
+    },
+    {
       "title": "Sematext Docker Agent",
       "type": 2,
       "categories": [
