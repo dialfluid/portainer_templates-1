@@ -6,7 +6,7 @@ services:
     image: matomo
     container_name: matomo
     links:
-      - db
+      - matomo_db
     environment:
       - MATOMO_DATABASE_HOST=matomo_db
       - MATOMO_DATABASE_USERNAME=matomo
