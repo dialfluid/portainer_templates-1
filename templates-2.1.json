@@ -3552,7 +3552,7 @@
       "env": [
         {
           "name": "SERVICE_URL",
-          "label": "Domain Name",
+          "label": "Service URL",
           "default": "seafile.domain.com"
         },
         {
