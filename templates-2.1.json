@@ -1236,14 +1236,15 @@
           "bind": "/portainer/AppData/FileBrowser/Data"
         }
       ]
-    },{
+    },
+    {
       "type": 3,
       "title": "Firefly III",
       "name": "firefly-iii",
       "description": "Self-hosted personal finance dashboard.",
       "categories": [
         "Finance",
-        "Tools",
+        "Tools"
       ],
       "platform": "linux",
       "repository": {
