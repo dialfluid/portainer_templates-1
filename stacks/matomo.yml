@@ -1,0 +1,33 @@
+---
+version: "2.1"
+
+services:
+  matomo:
+    image: matomo
+    container_name: matomo
+    links:
+      - db
+    environment:
+      - MATOMO_DATABASE_HOST=matomo_db
+      - MATOMO_DATABASE_USERNAME=matomo
+      - MATOMO_DATABASE_PASSWORD=${DB_PASSWORD}
+      - MATOMO_DATABASE_DBNAME=matomo
+    volumes:
+      - /portainer/AppData/Matomo/Config:/var/www/html
+    ports:
+      - ${PORT}:80
+    restart: unless-stopped
+  matomo_db:
+    image: linuxserver/mariadb
+    container_name: matomo_db
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=Europe/London
+      - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
+      - MYSQL_DATABASE=matomo #optional
+      - MYSQL_USER=matomo #optional
+      - MYSQL_PASSWORD=${DB_PASSWORD} #optional
+    volumes:
+      - /portainer/AppData/Matomo/DB:/config
+    restart: unless-stopped
