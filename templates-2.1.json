@@ -1238,61 +1238,6 @@
       ]
     },
     {
-      "type": 3,
-      "title": "Firefly III",
-      "name": "firefly-iii",
-      "description": "Self-hosted personal finance dashboard.",
-      "categories": [
-        "Finance",
-        "Tools"
-      ],
-      "platform": "linux",
-      "repository": {
-        "url": "https://github.com/andyyanguk/selfhosted_templates",
-        "stackfile": "stacks/firefly-iii.yml"
-      },
-      "env": [
-        {
-          "name": "DB_PUID",
-          "label": "DB_PUID",
-          "default": "1000"
-        },
-        {
-          "name": "DB_PGID",
-          "label": "DB_PGID",
-          "default": "100"
-        },
-        {
-          "name": "DATABASE_PASSWORD",
-          "label": "DATABASE_PASSWORD"
-        },
-        {
-          "name": "MYSQL_ROOT_PASSWORD",
-          "label": "MYSQL_ROOT_PASSWORD"
-        },
-        {
-          "name": "PORT",
-          "label": "PORT",
-          "default": "8071"
-        },
-        {
-          "name": "APP_KEY",
-          "label": "APP_KEY",
-          "default": "32CharacterKeyHere"
-        },
-        {
-          "name": "FIREFLY_FOLDER",
-          "label": "FIREFLY_FOLDER",
-          "default": "/portainer/AppData/Firefly-III/Upload"
-        },
-        {
-          "name": "DB_FOLDER",
-          "label": "DB_FOLDER",
-          "default": "/portainer/AppData/Firefly-III/DB"
-        }
-      ]
-    },
-    {
       "type": 1,
       "title": "FreshRSS",
       "name": "freshrss",
