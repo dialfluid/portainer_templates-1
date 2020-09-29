@@ -3551,8 +3551,8 @@
         ],
       "env": [
         {
-          "name": "SERVICE_URL",
-          "label": "Service URL",
+          "name": "SEAFILE_SERVER_HOSTNAME",
+          "label": "Server URL",
           "default": "seafile.domain.com"
         },
         {
