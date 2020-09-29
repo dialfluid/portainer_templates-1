@@ -1280,7 +1280,6 @@
           "label": "APP_KEY",
           "default": "32CharacterKeyHere"
         },
-        },
         {
           "name": "FIREFLY_FOLDER",
           "label": "FIREFLY_FOLDER",
