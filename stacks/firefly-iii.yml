@@ -1,0 +1,33 @@
+version: "3.3"
+services:
+  fireflyiii:
+    image: jc5x/firefly-iii:latest
+    container_name: firefly-iii
+    environment:
+      - APP_Key=${APP_KEY}
+      - DB_HOST=firefly-iii_db
+      - DB_CONNECTION=mysql
+      - DB_DATABASE=firefly_db
+      - DB_USERNAME=firefly-iii_user
+      - DB_PASSWORD=${DATABASE_PASSWORD}
+    volumes:
+      - ${FIREFLY_FOLDER}:/var/www/html/storage/upload
+    ports:
+      - ${PORT}:8080
+    restart: unless-stopped
+    depends_on:
+      - firefly-iii_db
+  firefly-iii_db:
+    image: linuxserver/mariadb
+    container_name: firefly-iii_db
+    environment:
+      - PUID=${DB_PUID}
+      - PGID=${DB_PGID}
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - TZ=EUrope/London
+      - MYSQL_DATABASE=firefly_db
+      - MYSQL_USER=firefly-iii_user
+      - MYSQL_PASSWORD=${DATABASE_PASSWORD}
+    volumes:
+      - ${DB_FOLDER}:/config
+    restart: unless-stopped
