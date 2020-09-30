@@ -17,8 +17,6 @@ services:
     ports:
       - ${PORT}:80
     restart: unless-stopped
-    depends_on: 
-      - matomo_db
   matomo_db:
     image: linuxserver/mariadb
     container_name: matomo_db
