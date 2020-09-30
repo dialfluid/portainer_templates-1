@@ -5,7 +5,6 @@ services:
   matomo:
     image: matomo
     container_name: matomo
-    networks: internal
     environment:
       - MATOMO_DATABASE_HOST=matomo_db
       - MATOMO_DATABASE_USERNAME=matomo
@@ -19,7 +18,6 @@ services:
   matomo_db:
     image: linuxserver/mariadb
     container_name: matomo_db
-    networks: internal
     environment:
       - PUID=${PUID}
       - PGID=${PGID}
@@ -31,7 +29,3 @@ services:
     volumes:
       - /portainer/AppData/Matomo/DB:/config
     restart: unless-stopped
-    
-networks:
-  internal:
-    driver: bridge
