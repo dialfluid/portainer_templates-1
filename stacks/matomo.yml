@@ -11,7 +11,6 @@ services:
       - MATOMO_DATABASE_USERNAME=matomo
       - MATOMO_DATABASE_PASSWORD=${DB_PASSWORD}
       - MATOMO_DATABASE_DBNAME=matomo
-      - TZ=Europe/London
     volumes:
       - /portainer/AppData/Matomo/Config:/var/www/html
     ports:
