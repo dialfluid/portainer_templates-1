@@ -2,8 +2,8 @@
 version: "2.1"
 
 services:
-  matomo:
-    image: matomo
+  app:
+    image: matomo:fpm
     container_name: matomo
     environment:
       - MATOMO_DATABASE_HOST=matomo_db
@@ -15,7 +15,7 @@ services:
     ports:
       - ${PORT}:80
     restart: unless-stopped
-  matomo_db:
+  db:
     image: linuxserver/mariadb
     container_name: matomo_db
     environment:
