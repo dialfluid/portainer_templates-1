@@ -32,3 +32,7 @@ services:
     volumes:
       - /portainer/AppData/Matomo/DB:/config
     restart: unless-stopped
+    
+networks:
+  internal:
+    driver: bridge
