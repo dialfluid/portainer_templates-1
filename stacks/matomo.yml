@@ -5,19 +5,24 @@ services:
   matomo:
     image: matomo
     container_name: matomo
+    networks: internal
     environment:
       - MATOMO_DATABASE_HOST=matomo_db
       - MATOMO_DATABASE_USERNAME=matomo
       - MATOMO_DATABASE_PASSWORD=${DB_PASSWORD}
       - MATOMO_DATABASE_DBNAME=matomo
+      - TZ=Europe/London
     volumes:
       - /portainer/AppData/Matomo/Config:/var/www/html
     ports:
       - ${PORT}:80
     restart: unless-stopped
+    depends_on: 
+      - matomo_db
   matomo_db:
     image: linuxserver/mariadb
     container_name: matomo_db
+    networks: internal
     environment:
       - PUID=${PUID}
       - PGID=${PGID}
