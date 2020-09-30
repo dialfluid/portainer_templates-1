@@ -3,7 +3,7 @@ version: "2.1"
 
 services:
   app:
-    image: matomo:fpm
+    image: matomo
     container_name: matomo
     environment:
       - MATOMO_DATABASE_HOST=matomo_db
