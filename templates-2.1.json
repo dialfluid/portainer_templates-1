@@ -2095,28 +2095,13 @@
       },
       "env": [
         {
-          "name": "PUID",
-          "label": "PUID",
-          "default": "1000"
+          "name": "HTTP_PORT",
+          "label": "HTTP_PORT",
+          "default": "8088"
         },
         {
-          "name": "PGID",
-          "label": "PGID",
-          "default": "100"
-        },
-        {
-          "name": "DB_PASSWORD",
-          "label": "DB_PASSWORD",
-          "default": "m2fe4L9U!Pz^eQxxG4r$cWTs@ELfiE&u"
-        },
-        {
-          "name": "DB_ROOT_PASSWORD",
-          "label": "DB_ROOT_PASSWORD",
-          "default": "p%e^LwtYRyZGKDeS&a2saoa4ks#okXLw"
-        },
-        {
-          "name": "PORT",
-          "label": "PORT",
+          "name": "HTTPS_PORT",
+          "label": "HTTPS_PORT",
           "default": "8089"
         }
       ]
