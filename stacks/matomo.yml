@@ -19,6 +19,7 @@ services:
       - ALLOW_EMPTY_PASSWORD=yes
     ports:
       - '8089:80'
+      - '8088:443'
     depends_on:
       - mariadb
     volumes:
