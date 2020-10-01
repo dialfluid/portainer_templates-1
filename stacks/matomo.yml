@@ -25,6 +25,6 @@ services:
       - 'matomo_data:/bitnami'
 volumes:
   mariadb_data:
-    driver: bridge
+    driver: local
   matomo_data:
-    driver: bridge
+    driver: local
