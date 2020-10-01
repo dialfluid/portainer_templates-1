@@ -9,7 +9,7 @@ services:
       - MATOMO_DATABASE_HOST=matomo_db
       - MATOMO_DATABASE_USERNAME=matomo
       - MATOMO_DATABASE_PASSWORD=${DB_PASSWORD}
-      - MATOMO_DATABASE_DBNAME=matomo_db
+      - MATOMO_DATABASE_DBNAME=matomo
     volumes:
       - /portainer/AppData/Matomo/Config:/var/www/html
     ports:
@@ -25,9 +25,9 @@ services:
       - PGID=${PGID}
       - TZ=Europe/London
       - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
-      - MYSQL_DATABASE=matomo_db #optional
-      - MYSQL_USER=matomo #optional
-      - MYSQL_PASSWORD=${DB_PASSWORD} #optional
+      - MYSQL_DATABASE=matomo
+      - MYSQL_USER=matomo
+      - MYSQL_PASSWORD=${DB_PASSWORD}
     volumes:
       - /portainer/AppData/Matomo/DB:/config
     restart: unless-stopped
