@@ -5,10 +5,11 @@ services:
     environment:
       - MARIADB_USER=bn_matomo
       - MARIADB_DATABASE=bitnami_matomo
-      - ALLOW_EMPTY_PASSWORD=yes
+      - MARIADB_PASSWORD=${DB_PASSWORD}
+      - ALLOW_EMPTY_PASSWORD=no
       - MARIADB_EXTRA_FLAGS=--max_allowed_packet=64MB
     volumes:
-      - 'mariadb_data:/bitnami'
+      - '/portainer/AppData/Matomo/DB:/bitnami'
   matomo:
     image: 'docker.io/bitnami/matomo:3-debian-10'
     environment:
@@ -16,16 +17,12 @@ services:
       - MARIADB_PORT_NUMBER=3306
       - MATOMO_DATABASE_USER=bn_matomo
       - MATOMO_DATABASE_NAME=bitnami_matomo
-      - ALLOW_EMPTY_PASSWORD=yes
+      - MATOMO_DATABASE_PASSWORD=${DB_PASSWORD}
+      - ALLOW_EMPTY_PASSWORD=no
     ports:
       - '8089:80'
       - '8088:443'
     depends_on:
       - mariadb
     volumes:
-      - 'matomo_data:/bitnami'
-volumes:
-  mariadb_data:
-    driver: local
-  matomo_data:
-    driver: local
+      - '/portainer/AppData/Matomo/Config:/bitnami'
