@@ -18,13 +18,13 @@ services:
       - MATOMO_DATABASE_NAME=bitnami_matomo
       - ALLOW_EMPTY_PASSWORD=yes
     ports:
-      - '8091:80'
+      - '8089:80'
     depends_on:
       - mariadb
     volumes:
       - 'matomo_data:/bitnami'
 volumes:
   mariadb_data:
-    driver: local
+    driver: bridge
   matomo_data:
-    driver: local
+    driver: bridge
