@@ -1817,7 +1817,10 @@
       "restart_policy": "unless-stopped",
       "ports": [
         "10000:8888/tcp"
-        ]
+        ],
+      "volumes": [
+        {
+          "container": "/home/jovyan/work"
     },
     {
       "type": 1,
