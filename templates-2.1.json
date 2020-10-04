@@ -1821,6 +1821,8 @@
       "volumes": [
         {
           "container": "/home/jovyan/work"
+        }
+       ]
     },
     {
       "type": 1,
