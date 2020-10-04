@@ -1806,6 +1806,25 @@
     },
     {
       "type": 1,
+      "title": "Jupyter Notebook",
+      "name": "jupyter",
+      "description": "Jupyter notebook.",
+      "image": "jupyter/datascience-notebook",
+      "categories": [
+        "Data Science"
+        ],
+      "platform": "linux",
+      "restart_policy": "unless-stopped",
+      "ports": [
+        "8888:8888/tcp"
+        ],
+      "volumes": [
+        "container": "/home/jovyan/work",
+        "bind": "/portainer/AppData/Jupter-Notebook/Datascience/"
+        ]
+    },
+    {
+      "type": 1,
       "title": "Kodi Headless",
       "name": "kodi-headless",
       "description": "Headless installation of Kodi™ (formerly known as XBMC™), to enable library updates.",
