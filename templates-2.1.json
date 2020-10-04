@@ -2103,6 +2103,16 @@
           "name": "HTTPS_PORT",
           "label": "HTTPS_PORT",
           "default": "8089"
+        },
+        {
+          "name": "USERNAME",
+          "label": "USERNAME",
+          "default": "User"
+        },
+        {
+          "name": "PASSWORD",
+          "label": "PASSWORD",
+          "default": "bitnami"
         }
       ]
     },
