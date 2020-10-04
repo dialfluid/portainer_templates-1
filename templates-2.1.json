@@ -2096,24 +2096,29 @@
       "env": [
         {
           "name": "HTTP_PORT",
-          "label": "HTTP_PORT",
+          "label": "HTTP Port",
           "default": "8088"
         },
         {
           "name": "HTTPS_PORT",
-          "label": "HTTPS_PORT",
+          "label": "HTTPS Port",
           "default": "8089"
         },
         {
           "name": "USERNAME",
-          "label": "USERNAME",
+          "label": "Username",
           "default": "User"
         },
         {
           "name": "PASSWORD",
-          "label": "PASSWORD",
+          "label": "Password",
           "default": "bitnami"
-        }
+        },
+        {
+          "name": "WEBSITE_NAME",
+          "label": "Website Name",
+          "default": "Example"
+        },
       ]
     },
     {
