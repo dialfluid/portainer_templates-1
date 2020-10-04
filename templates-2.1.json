@@ -1809,21 +1809,15 @@
       "title": "Jupyter Notebook",
       "name": "jupyter",
       "description": "Jupyter notebook.",
-      "image": "jupyter/datascience-notebook",
+      "image": "jupyter/scipy-notebook",
       "categories": [
         "Data Science"
         ],
       "platform": "linux",
       "restart_policy": "unless-stopped",
       "ports": [
-        "8888:8888/tcp"
+        "10000:8888/tcp"
         ],
-      "volumes": [
-        {
-        "container": "/home/jovyan/work",
-        "bind": "/portainer/AppData/Jupter-Notebook/Datascience/"
-        }
-        ]
     },
     {
       "type": 1,
