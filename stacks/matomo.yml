@@ -17,6 +17,8 @@ services:
       - MATOMO_DATABASE_USER=bn_matomo
       - MATOMO_DATABASE_NAME=bitnami_matomo
       - ALLOW_EMPTY_PASSWORD=yes
+      - MATOMO_USERNAME=${USERNAME}
+      - MATOMO_PASSWORD=${PASSWORD}
     ports:
       - '${HTTP_PORT}:80'
       - '${HTTPS_PORT}:443'
