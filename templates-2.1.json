@@ -1819,8 +1819,10 @@
         "8888:8888/tcp"
         ],
       "volumes": [
+        {
         "container": "/home/jovyan/work",
         "bind": "/portainer/AppData/Jupter-Notebook/Datascience/"
+        }
         ]
     },
     {
