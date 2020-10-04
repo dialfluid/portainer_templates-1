@@ -2118,7 +2118,7 @@
           "name": "WEBSITE_NAME",
           "label": "Website Name",
           "default": "Example"
-        },
+        }
       ]
     },
     {
