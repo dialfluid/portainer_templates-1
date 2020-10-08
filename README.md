@@ -22,3 +22,138 @@ Most applications will have a default application path of /portainer/XXXX
 This repository is a culmination of my own templates on top of these 2 sets of templates:
 * Portainer's default templates
 * SelfHostedPro's portainer templates
+
+# Apps as of 8th October:
+* Airsonic
+* Authelia
+* Bazarr
+* Beets
+* Bitwarden RS
+* BitwardenRS Backup
+* Booksonic
+* Bookstack
+* Caddy
+* Calibre Web
+* Cardigann
+* Chevereto
+* Chowdown
+* CockroachDB
+* Code Server
+* Codiad
+* CommandBox
+* ContentBox
+* COPS
+* CouchPotato
+* Daapd
+* DashMachine
+* Datadog agent
+* Davos
+* DeeMix
+* Deluge
+* Domoticz
+* Drupal
+* Duck DNS
+* Duplicati
+* Emby
+* EmbyStat
+* File browser
+* FileBrowser
+* FreshRSS
+* Gazee
+* Ghost
+* Gitlab CE
+* Grocy
+* Guacamole
+* Headphones
+* Heimdall
+* Homer
+* HTPC Manager
+* Huginn
+* Invoice Ninja
+* IronFunctions
+* Jackett
+* Jellyfin
+* Jenkins
+* Joomla
+* Jupyter Notebook
+* Kodi Headless
+* LazyLibrarian
+* Let's Encrypt
+* LibreSpeed
+* lidarr
+* Lychee
+* Magento 2
+* MariaDB
+* Matomo
+* Mautic
+* McMyAdmin 2
+* Medusa
+* Microsoft OMS Agent
+* Minetest
+* Minio
+* Minisatip
+* Mstream
+* Murmur
+* MusicBrainz
+* Muximux
+* Mylar
+* Nextcloud
+* Nginx
+* Nginx Proxy Manager
+* NZBGet
+* NZBHydra 2
+* Odoo
+* Ombi
+* OpenFaaS
+* OpenVPN Access Server
+* Organizr v2
+* OScam
+* PhotoShow
+* Pi-Hole
+* Piwigo
+* Plesk
+* Plex
+* Plex Requests
+* Plone
+* Portainer Agent
+* Pritunl
+* ProjectSend
+* ProtonMail Bridge
+* Pydio
+* qBittorrent
+* Quassel IRC
+* Radarr
+* Reactive-Resume
+* Redmine
+* Resilio Sync
+* ruTorrent
+* SABnzbd
+* Scality S3
+* Seafile
+* Sematext Docker Agent
+* Shiori
+* SickChill
+* SickGear
+* SmokePing
+* Snibox
+* Sonarr
+* SyncThing
+* Tautulli
+* TheLounge
+* TiddlyWiki
+* Tiny Tiny RSS
+* Transmission
+* Transmission-OpenVPN
+* Tvheadend
+* Ubooquity
+* UniFi Controller
+* UniFi Video
+* Urbackup
+* Watchtower
+* WebGrab+Plus
+* Whoogle
+* Wikijs
+* Wordpress
+* Wowza
+* YouTubeDL-Material
+* ZNC
