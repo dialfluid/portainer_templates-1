@@ -4395,8 +4395,8 @@
         ],
       "env": [
         {
-          "name": "Domain name",
-          "label": "SYMFONY__ENV__DOMAIN_NAME",
+          "name": "SYMFONY__ENV__DOMAIN_NAME",
+          "label": "Domain Name",
           "default": "https://wallabag.yourdomain.com"
         }
         ]
