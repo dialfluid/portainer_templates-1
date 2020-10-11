@@ -4372,6 +4372,30 @@
     },
     {
       "type": 1,
+      "title": "Wallabag",
+      "name": "wallabag",
+      "description": "wallabag is a self hostable application for saving web pages. With this application you will not miss content anymore. Click, save, read it when you want. It saves the content you select so that you can read it when you have time.",
+      "image": "wallabag/wallabag",
+      "note": "TESTING - This template uses SQLite only.",
+      "categories": [
+        "Tools"
+        ],
+      "platform": "linux",
+      "restart_policy": "unless-stopped",
+      "volumes": [
+        {
+          "container": "/var/www/wallabag/data"
+        },
+        {
+          "container": "/var/www/wallabag/web/assets/images"
+        }
+      ],
+      "ports": [
+        "9841:80/tcp"
+        ] 
+    },    
+    {
+      "type": 1,
       "title": "Watchtower",
       "name": "watchtower",
       "description": "With watchtower you can update the running version of your containerized app simply by pushing a new image to the Docker Hub or your own image registry. Watchtower will pull down your new image, gracefully shut down your existing container and restart it with the same options that were used when it was deployed initially.",
