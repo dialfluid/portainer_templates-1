@@ -1825,7 +1825,19 @@
         ],
       "volumes": [
         {
-          "container": "/home/jovyan/work"
+          "container": "/home/jovyan/"
+        }
+       ],
+      "env": [
+        {
+          "name": "NB_UID",
+          "label": "NB_UID",
+          "default": "1000"
+        },
+        {
+         "name": "NB_GID",
+          "label": "NB_GID",
+          "default": "100"
         }
        ]
     },
