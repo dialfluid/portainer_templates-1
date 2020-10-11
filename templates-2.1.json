@@ -4392,7 +4392,14 @@
       ],
       "ports": [
         "9841:80/tcp"
-        ] 
+        ],
+      "env": [
+        {
+          "name": "Domain name",
+          "label": "SYMFONY__ENV__DOMAIN_NAME",
+          "default": "https://wallabag.yourdomain.com"
+        }
+        ]
     },    
     {
       "type": 1,
