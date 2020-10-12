@@ -2999,12 +2999,9 @@
        ],
       "env": [
         {
-          "name": "PMA_HOST",
-          "label": "Database Host"
-        },
-        {
-          "name": "MYSQL_ROOT_PASSWORD",
-          "label": "Root Password"
+          "name": "PMA_ARBITRARY",
+          "label": "PMA_ARBITRARY",
+          "default": "1"
         }
        ]
     },
