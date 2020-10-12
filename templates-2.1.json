@@ -4522,7 +4522,34 @@
     },
     {
       "type": 3,
-      "title": "Wordpress",
+      "title": "Wordpress + MariaDB",
+      "description": "Wordpress setup with a MariaDB",
+      "note": "Deploys a Wordpress instance connected to a MariaDB.",
+      "categories": [
+        "CMS"
+      ],
+      "platform": "linux",
+      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/wordpress.png",
+      "repository": {
+        "url": "https://github.com/AndyYangUK/portainer_templates",
+        "stackfile": "stacks/wordpress/wordpress+mariadb.yml"
+      },
+      "env": [
+        {
+          "name": "DB_PASSWORD",
+          "label": "Database password",
+          "description": "Password used by the MariaDB Wordpress user."
+        },
+        {
+          "name": "DB_ROOT_PASSWORD",
+          "label": "Database root password",
+          "description": "Password used by the MariaDB root user."
+        }
+      ]
+    },
+    {
+      "type": 3,
+      "title": "Wordpress + MySQL",
       "description": "Wordpress setup with a MySQL database",
       "note": "Deploys a Wordpress instance connected to a MySQL database.",
       "categories": [
@@ -4532,7 +4559,7 @@
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/wordpress.png",
       "repository": {
         "url": "https://github.com/AndyYangUK/portainer_templates",
-        "stackfile": "stacks/wordpress/docker-compose.yml"
+        "stackfile": "stacks/wordpress/wordpress+mysql.yml"
       },
       "env": [
         {
