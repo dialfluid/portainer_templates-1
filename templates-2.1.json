@@ -2987,15 +2987,15 @@
       "type": 1,
       "title": "phpmyadmin",
       "name": "phpmyadmin",
-      "image": "phpmyadmin/phpmyadmin:pm-alpine",
+      "image": "phpmyadmin/phpmyadmin:fpm-alpine",
       "description": "Use this to control your MySQL/MariaDB database.",
       "categories": [
         "Database"
-        ],
+       ],
       "platform": "linux",
       "restart_policy": "unless-stopped",
       "ports": [
-        "80/tcp"
+        "80"
        ],
       "env": [
         {
