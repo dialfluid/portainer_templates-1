@@ -4544,6 +4544,11 @@
           "name": "DB_ROOT_PASSWORD",
           "label": "Database root password",
           "description": "Password used by the MariaDB root user."
+        },
+        {
+          "name": "WP_PORT",
+          "label": "Port",
+          "default": "9841"
         }
       ]
     },
