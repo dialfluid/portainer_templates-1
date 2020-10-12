@@ -2994,14 +2994,18 @@
        ],
       "platform": "linux",
       "restart_policy": "unless-stopped",
+      "note": "Make sure to select the correct network!",
       "ports": [
         "80"
        ],
       "env": [
         {
-          "name": "PMA_ARBITRARY",
-          "label": "PMA_ARBITRARY",
-          "default": "1"
+          "name": "PMA_HOST",
+          "label": "Database Host"
+        },
+        {
+          "name": "MYSQL_ROOT_PASSWORD",
+          "label": "Root Password"
         }
        ]
     },
