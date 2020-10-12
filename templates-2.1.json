@@ -2996,7 +2996,7 @@
       "restart_policy": "unless-stopped",
       "note": "Make sure to select the correct network!",
       "ports": [
-        "80"
+        "80/tcp"
        ],
       "env": [
         {
