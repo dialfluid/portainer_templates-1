@@ -14,7 +14,7 @@ services:
     volumes:
       - /portainer/AppData/Wordpress/DB:/config
     restart: unless-stopped
-    wordpress:
+   wordpress:
      image: wordpress:latest
      container_name: wordpress
      ports:
