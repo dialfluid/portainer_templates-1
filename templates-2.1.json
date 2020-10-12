@@ -1191,31 +1191,6 @@
     },
     {
       "type": 1,
-      "title": "File browser",
-      "description": "A web file manager",
-      "note": "Default credentials: admin/admin",
-      "categories": [
-        "filesystem",
-        "storage"
-      ],
-      "platform": "linux",
-      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/filebrowser.png",
-      "image": "filebrowser/filebrowser:latest",
-      "ports": [
-        "80/tcp"
-      ],
-      "volumes": [
-        {
-          "container": "/data"
-        },
-        {
-          "container": "/srv"
-        }
-      ],
-      "command": "--port 80 --database /data/database.db --root /srv"
-    },
-    {
-      "type": 1,
       "title": "FileBrowser",
       "name": "filebrowser",
       "description": "Web File Browser which can be used as a middleware or standalone app.",
@@ -2891,22 +2866,6 @@
       ]
     },
     {
-      "type": 2,
-      "title": "OpenFaaS",
-      "name": "func",
-      "description": "Serverless functions made simple",
-      "note": "Deploys the API gateway and sample functions. You can access the UI on port 8080. <b>Warning</b>: the name of the stack must be 'func'.",
-      "categories": [
-        "serverless"
-      ],
-      "platform": "linux",
-      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/openfaas.png",
-      "repository": {
-        "url": "https://github.com/openfaas/faas",
-        "stackfile": "docker-compose.yml"
-      }
-    },
-    {
       "type": 1,
       "title": "OpenVPN Access Server",
       "name": "openvpn-as",
@@ -3023,6 +2982,31 @@
           "default": "100"
         }
       ]
+    },
+    {
+      "type": 1,
+      "title": "phpmyadmin",
+      "name": "phpmyadmin",
+      "image": "phpmyadmin/phpmyadmin:pm-alpine",
+      "description": "Use this to control your MySQL/MariaDB database."
+      "categories": [
+        "Database"
+        ],
+      "platform": "linux",
+      "restart_policy": "unless-stopped",
+      "ports": [
+        "80/tcp"
+       ],
+      "env": [
+        {
+          "name": "PMA_HOST",
+          "label": "Database Host"
+        },
+        {
+          "name": "MYSQL_ROOT_PASSWORD",
+          "label": "Root Password"
+        }
+       ]
     },
     {
       "type": 1,
