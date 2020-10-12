@@ -2987,7 +2987,7 @@
       "type": 1,
       "title": "phpmyadmin",
       "name": "phpmyadmin",
-      "image": "phpmyadmin/phpmyadmin:fpm-alpine",
+      "image": "phpmyadmin/phpmyadmin",
       "description": "Use this to control your MySQL/MariaDB database.",
       "categories": [
         "Database"
