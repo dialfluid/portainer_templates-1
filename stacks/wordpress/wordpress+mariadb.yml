@@ -13,7 +13,7 @@ services:
        WORDPRESS_DB_PASSWORD: ${DB_PASSWORD}
      working_dir: /var/www/html
      volumes:
-      - /portainer/AppData/Wordpress/wp-content:/var/www/html/wp-content
+       - /portainer/AppData/Wordpress/wp-content:/var/www/html/wp-content
     db:
     image: linuxserver/mariadb
     container_name: wordpress_db
