@@ -33,6 +33,8 @@ This repository is a culmination of my own templates on top of these 2 sets of t
 - [ ] Grav
 - [ ] Yourls
 
+Feel free to add suggestions!
+
 ## Apps as of 8th October
 
 * Airsonic
