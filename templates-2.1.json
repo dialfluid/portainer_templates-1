@@ -2761,7 +2761,7 @@
       "title": "OScam",
       "name": "oscam",
       "description": "OScam is a softcam, software to be used to decrypt digital television channels on a settopbox (receiver), as an alternative for a conditional access module\n  (CAM). OScam is, compared with other softcams (CCcam, mgcamd, etc.), open source. Hence, the name Open Source Conditional Access Module (OScam). OScam is based on the\n  not so well known softcam MpCS. The main features of OSCam are next to its softcam capabilities, that it is able to function as a cardserver.",
-      "logo": "http://i.imgur.com/8LadrLg.png",
+      "logo": "https://i.imgur.com/8LadrLg.png",
       "image": "linuxserver/oscam:latest",
       "categories": [
         "Other"
@@ -3669,7 +3669,7 @@
       "title": "Shiori",
       "name": "shiori",
       "description": "Shiori is a simple bookmarks manager written in Go language. Intended as a simple clone of Pocket. You can use it as command line application or as web application.",
-      "logo": "https://raw.githubusercontent.com/robocopAlpha/selfhosted_templates/master/Images/shiori-icon.png",
+      "logo": "https://raw.githubusercontent.com/selfhosted_pro/selfhosted_templates/master/Images/shiori-icon.png",
       "image": "radhifadlillah/shiori:latest",
       "categories": [
         "Other",
@@ -3882,6 +3882,21 @@
         }
       ]
     },
+    {
+      "type": 1,
+      "title": "Switch lan play server",
+      "name" "lan-play-server",
+      "description": "Spins up a lan-play server for Nintendo Swich.",
+      "image": "spacemeowx2/switch-lan-play",
+      "categories": [
+        "Games"
+      ],
+      "restart_policy": "unless-stopped",
+      "ports": [
+      "11451:11451/tcp",
+      "11451:11451/udp"
+      ]
+    },    
     {
       "type": 1,
       "title": "SyncThing",
@@ -4163,7 +4178,7 @@
       "title": "Tvheadend",
       "name": "tvheadend",
       "description": "Tvheadend is a TV streaming server and recorder for Linux, FreeBSD and Android supporting DVB-S, DVB-S2, DVB-C, DVB-T, ATSC, ISDB-T, IPTV, SAT&gt;IP and HDHomeRun as input sources.\r\nTvheadend offers the HTTP (VLC, MPlayer), HTSP (Kodi, Movian) and SAT&gt;IP streaming.\r\nMultiple EPG sources are supported (over-the-air DVB and ATSC including OpenTV DVB extensions, XMLTV, PyXML).",
-      "logo": "http://i.imgur.com/zGSUAT4.png",
+      "logo": "https://i.imgur.com/zGSUAT4.png",
       "image": "linuxserver/tvheadend:latest",
       "categories": [
         "Video",
