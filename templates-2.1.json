@@ -375,7 +375,7 @@
         "Wiki"
       ],
       "repository": {
-        "url": "https://github.com/AndyYangUK/portainer_templates/tree/CodiMD",
+        "url": "https://github.com/AndyYangUK/portainer_templates",
         "stackfile": "stacks/codimd.yml"
       },
       "env": [
