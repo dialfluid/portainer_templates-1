@@ -3,6 +3,7 @@
 These templates are designed for people who want to spin up Docker containers for various selfhosted apps via Portainer.
 
 ## Pre-requisites
+
 1. A system with Docker installed
 2. A system with Portainer installed
 
@@ -23,13 +24,23 @@ This repository is a culmination of my own templates on top of these 2 sets of t
 * Portainer's default templates
 * SelfHostedPro's portainer templates
 
-# Apps as of 8th October:
+# Planned Apps
+
+- [ ] Wekan
+- [ ] Mattermost
+- [ ] Dokuwiki
+- [ ] Grafana
+- [ ] Grav
+- [ ] Yourls
+
+# Apps as of 8th October
+
 * Airsonic
 * Authelia
 * Bazarr
 * Beets
 * Bitwarden RS
-* BitwardenRS Backup
+* Bitwarden RS Backup
 * Booksonic
 * Bookstack
 * Caddy
@@ -56,7 +67,6 @@ This repository is a culmination of my own templates on top of these 2 sets of t
 * Duplicati
 * Emby
 * EmbyStat
-* File browser
 * FileBrowser
 * FreshRSS
 * Gazee
@@ -150,6 +160,7 @@ This repository is a culmination of my own templates on top of these 2 sets of t
 * UniFi Video
 * Urbackup
 * Watchtower
+* Wallabag
 * WebGrab+Plus
 * Whoogle
 * Wikijs
