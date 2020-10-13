@@ -3,7 +3,7 @@ services:
   mariadb:
     image: linuxserver/mariadb:latest
     container_name: codimd_mariadb
-    restart: always
+    restart: unless-stopped
     volumes:
       - ${MARIADB_VOLUME}:/config
     environment:
@@ -13,11 +13,11 @@ services:
       - MYSQL_PASSWORD=${DB_PASSWORD}
       - PGID=${PGID}
       - PUID=${PUID}
-      - TZ=Europe/London
+      - TZ=${TZ}
   codimd:
     image: linuxserver/codimd:latest
     container_name: codimd
-    restart: always
+    restart: unless-stopped
     depends_on:
       - mariadb
     volumes:
@@ -30,6 +30,6 @@ services:
       - DB_PORT=3306
       - PGID=${PGID}
       - PUID=${PUID}
-      - TZ=Europe/London
+      - TZ=${TZ}
     ports:
       - "${PORT}:3000"
