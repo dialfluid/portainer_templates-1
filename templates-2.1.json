@@ -3885,7 +3885,7 @@
     {
       "type": 1,
       "title": "Switch lan play server",
-      "name" "lan-play-server",
+      "name": "lan-play-server",
       "description": "Spins up a lan-play server for Nintendo Swich.",
       "image": "spacemeowx2/switch-lan-play",
       "categories": [
