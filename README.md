@@ -7,24 +7,24 @@ These templates are designed for people who want to spin up Docker containers fo
 1. A system with Docker installed
 2. A system with Portainer installed
 
-# Installation
+## Installation
 
 1. Login to Portainer
 2. Go to Settings
 3. Under **App Templates**, paste this
 https://raw.githubusercontent.com/AndyYangUK/portainer_templates/master/templates-2.1.json
 
-# Information
+## Information
 
 Most applications will have a default application path of /portainer/XXXX
 
-# Acknowledgement
+## Acknowledgement
 
 This repository is a culmination of my own templates on top of these 2 sets of templates:
 * Portainer's default templates
 * SelfHostedPro's portainer templates
 
-# Planned Apps
+## Planned Apps
 
 - [ ] Wekan
 - [ ] Mattermost
@@ -33,7 +33,7 @@ This repository is a culmination of my own templates on top of these 2 sets of t
 - [ ] Grav
 - [ ] Yourls
 
-# Apps as of 8th October
+## Apps as of 8th October
 
 * Airsonic
 * Authelia
