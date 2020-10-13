@@ -25,7 +25,7 @@ services:
     environment:
       - DB_HOST=mariadb
       - DB_USER=codimd
-      - DB_PASS=${DB_PASS}
+      - DB_PASS=${DB_PASSWORD}
       - DB_NAME=codimd
       - DB_PORT=3306
       - PGID=${PGID}
