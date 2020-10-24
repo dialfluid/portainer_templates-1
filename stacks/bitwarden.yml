@@ -7,7 +7,6 @@ services:
     restart: always
     volumes:
       - /portainer/AppData/Bitwarden-rs/Data:/data
-      - /portainer/AppData/Bitwarden-rs/Config:/config
     environment:
       ADMIN_TOKEN: ${ADMIN_TOKEN}
       DOMAIN: ${DOMAIN}
@@ -19,9 +18,7 @@ services:
     restart: always
     volumes:
       - /portainer/AppData/Bitwarden-rs/Data:/data
-      - /portainer/AppData/Bitwarden-rs/Config:/config
       - /portainer/AppData/Bitwarden-rs/DB-Backup:/backup
-      
     environment:
       BACKUP_FILE: /backup/db.sqlite3
       CRON_TIME: ${CRON_TIME}
