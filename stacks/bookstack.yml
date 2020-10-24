@@ -33,7 +33,7 @@ services:
       - /portainer/AppData/Bookstack/DB:/config
     restart: unless-stopped
   bookstack_db-backup:
-    build: ./periodic-backup
+    build: /periodic-backup
     container_name: bookstack_db_backup
     environment:
       MYSQL_CONTAINER_NAME: bookstack-db
