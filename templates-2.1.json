@@ -351,13 +351,11 @@
         },
         {
           "name": "DATABASE_PASSWORD",
-          "label": "DATABASE_PASSWORD",
-          "default": "YW94PzLyxyYqK9"
+          "label": "DATABASE_PASSWORD"
         },
         {
           "name": "MYSQL_ROOT_PASSWORD",
-          "label": "MYSQL_ROOT_PASSWORD",
-          "default": "2AZ7RqzVEzpqoQ6uxfDeyh33a7cAac"
+          "label": "MYSQL_ROOT_PASSWORD"
         },
         {
           "name": "PORT",
