@@ -206,8 +206,8 @@
           "default":"0 5 * * *"
         },
         {
-          "name":"UID",
-          "label":"UID",
+          "name":"UUID",
+          "label":"UUID",
           "default":"1000"
         },
         {
