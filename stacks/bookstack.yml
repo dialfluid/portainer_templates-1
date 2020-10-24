@@ -32,15 +32,3 @@ services:
     volumes:
       - /portainer/AppData/Bookstack/DB:/config
     restart: unless-stopped
-  periodic-backup:
-    build: ./periodic-backup
-    container_name: bookstack_db_backup
-    environment:
-      MYSQL_CONTAINER_NAME: bookstack_db
-      MYSQL_DATABASE: bookstackapp
-      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
-    volumes:
-      - /etc/localtime:/etc/localtime:ro
-      - /portainer/AppData/Bookstack/DB_Backup:/opt/mysql/backup
-    command: crond -f -d 8
-    restart: always
