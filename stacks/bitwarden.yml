@@ -1,0 +1,27 @@
+# docker-compose.yml
+version: '2'
+
+services:
+  bitwarden:
+    image: bitwardenrs/server:latest
+    restart: always
+    volumes:
+      - /portainer/AppData/Bitwarden-rs/Data:/data
+      - /portainer/AppData/Bitwarden-rs/Config:/config
+    environment:
+      WEBSOCKET_ENABLED: 'true' # Required to use websockets
+      SIGNUPS_ALLOWED: 'true'   # set to false to disable signups
+      ADMIN_TOKEN: ${ADMIN_TOKEN}
+      DOMAIN: ${DOMAIN}
+  backup:
+    image: bruceforce/bw_backup:latest
+    restart:always
+    volumes:
+      - /portainer/AppData/Bitwarden-rs/Data:/data
+      - /portainer/AppData/Bitwarden-rs/Config:/config
+    environment:
+      BACKUP_FILE: ${BACKUP_FILE}
+      CRON_TIME: ${CRON_TIME}
+      UUID: ${UUID}
+      GUID: ${GUID}
+    
