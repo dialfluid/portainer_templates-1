@@ -21,5 +21,5 @@ services:
       BACKUP_FILE: ${BACKUP_FILE}
       CRON_TIME: ${CRON_TIME}
       UUID: ${UUID}
-      GUID: ${GUID}
+      GID: ${GID}
     
