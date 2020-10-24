@@ -11,8 +11,9 @@ services:
     environment:
       ADMIN_TOKEN: ${ADMIN_TOKEN}
       DOMAIN: ${DOMAIN}
-    ports:
+    ports: [
       '${PORT}:80/tcp'
+      ]
   backup:
     image: bruceforce/bw_backup:latest
     restart: always
