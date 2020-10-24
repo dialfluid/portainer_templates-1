@@ -1,0 +1,14 @@
+ version: '2' 
+  
+ periodic-backup:
+    build: ./periodic-backup
+    container_name: ${CONTAINER_NAME}
+    environment:
+      MYSQL_CONTAINER_NAME: ${MYSQL_CONTAINER}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ${BACKUP_VOLUME}:/opt/mysql/backup
+    command: crond -f -d 8
+    restart: always
