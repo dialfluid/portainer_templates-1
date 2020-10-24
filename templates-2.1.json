@@ -2141,7 +2141,12 @@
           "name": "BACKUP_VOLUME",
           "label": "Backup Location",
           "default": "/portainer/AppData/APPNAME/DB_Backup"
-        }
+        },
+        {
+          "name": "NETWORK",
+          "label": "Network Name",
+          "default": "bridge"
+        }    
       ]
     },
     {    
