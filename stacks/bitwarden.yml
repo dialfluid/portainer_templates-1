@@ -9,8 +9,6 @@ services:
       - /portainer/AppData/Bitwarden-rs/Data:/data
       - /portainer/AppData/Bitwarden-rs/Config:/config
     environment:
-      WEBSOCKET_ENABLED: 'true' # Required to use websockets
-      SIGNUPS_ALLOWED: 'true'   # set to false to disable signups
       ADMIN_TOKEN: ${ADMIN_TOKEN}
       DOMAIN: ${DOMAIN}
   backup:
