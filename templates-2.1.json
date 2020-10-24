@@ -2129,12 +2129,12 @@
         },
         {
           "name": "MYSQL_DATABASE",
-          "label": "MySQL Database Name"
+          "label": "MySQL Database Name",
           "description": "Enter the name of the database to backup."
         },
         {
           "name": "MYSQL_ROOT_PASSWORD",
-          "label": "MySQL Root Password"
+          "label": "MySQL Root Password",
           "description": "enter the root password of the MySQL database."
         },
         {
