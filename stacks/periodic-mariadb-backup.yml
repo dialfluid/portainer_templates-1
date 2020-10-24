@@ -11,4 +11,5 @@
       - /etc/localtime:/etc/localtime:ro
       - ${BACKUP_VOLUME}:/opt/mysql/backup
     command: crond -f -d 8
+    network: ${NETWORK}
     restart: always
