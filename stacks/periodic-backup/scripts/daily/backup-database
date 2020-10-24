@@ -3,8 +3,8 @@
 BACKUP_FOLDER=/opt/mysql/backup
 NOW=$(date '+%d')
 
-GZIP=$(which gzip)
-MYSQLDUMP=$(which mysqldump)
+GZIP=gzip
+MYSQLDUMP=mysqldump
 
 ### MySQL Server Login info ###
 MDB=$MYSQL_DATABASE
