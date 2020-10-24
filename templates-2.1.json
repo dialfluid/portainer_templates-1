@@ -184,7 +184,7 @@
     {
       "type": 3,
       "title": "Bitwarden Stack",
-      "description": "Stack with bitwarden-rs container and an nightly backup routine."
+      "description": "Stack with bitwarden-rs container and an nightly backup routine.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bitwarden.png",
       "categories": [
         "Utilities"
