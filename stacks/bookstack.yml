@@ -36,7 +36,7 @@ services:
     build: /periodic-backup
     container_name: bookstack_db_backup
     environment:
-      MYSQL_CONTAINER_NAME: bookstack-db
+      MYSQL_CONTAINER_NAME: bookstack_db
       MYSQL_DATABASE: bookstackapp
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
     volumes:
