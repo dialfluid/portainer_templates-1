@@ -17,8 +17,10 @@ services:
     volumes:
       - /portainer/AppData/Bitwarden-rs/Data:/data
       - /portainer/AppData/Bitwarden-rs/Config:/config
+      - /portainer/AppData/Bitwarden-rs/DB-Backup:/backup
+      
     environment:
-      BACKUP_FILE: ${BACKUP_FILE}
+      BACKUP_FILE: /backup
       CRON_TIME: ${CRON_TIME}
       UUID: ${UUID}
       GID: ${GID}
