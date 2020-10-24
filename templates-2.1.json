@@ -2100,43 +2100,47 @@
         }
       ]
     },
-    {
-      "type": 1,
-      "title": "MariaDB",
-      "name": "mariadb",
-      "description": "An Enhanced drop in replacement for Mysql",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/mariadb-icon.png",
-      "image": "linuxserver/mariadb:latest",
+    {    
+      "type": 3,
+      "title": "MariaDB Backups",
+      "name": "mariadb_backup",
+      "description": "Periodically backup a MariaDB/MySQL database",
       "categories": [
-        "Other",
-        "Tools"
+        "Cloud",
+        "Productivity",
+        "Tools",
+        "Other"
       ],
       "platform": "linux",
-      "restart_policy": "unless-stopped",
-      "ports": [
-        "3306:3306/tcp"
-      ],
-      "volumes": [
-        {
-          "container": "/config",
-          "bind": "/portainer/AppData/Config/Mariadb"
-        }
-      ],
+      "repository": {
+        "url": "https://github.com/andyyanguk/portainer_templates",
+        "stackfile": "stacks/periodic-mariadb-backup.yml"
+      },
       "env": [
         {
-          "name": "PUID",
-          "label": "PUID",
-          "default": "1000"
+          "name": "CONTAINER_NAME",
+          "label": "Backup Container Name",
+          "default": "MariaDB Backup"
         },
         {
-          "name": "PGID",
-          "label": "PGID",
-          "default": "100"
+          "name": "MYSQL_CONTAINER",
+          "label": "MySQL Container Name",
+          "description": "Enter the Docker container name for the database to backup."
+        },
+        {
+          "name": "MYSQL_DATABASE",
+          "label": "MySQL Database Name"
+          "description": "Enter the name of the database to backup."
         },
         {
           "name": "MYSQL_ROOT_PASSWORD",
-          "label": "MYSQL_ROOT_PASSWORD",
-          "set": ""
+          "label": "MySQL Root Password"
+          "description": "enter the root password of the MySQL database."
+        },
+        {
+          "name": "BACKUP_VOLUME",
+          "label": "Backup Location",
+          "default": "/portainer/AppData/APPNAME/DB_Backup"
         }
       ]
     },
