@@ -182,6 +182,52 @@
       ]
     },
     {
+      "type": 3,
+      "title": "Bitwarden Stack",
+      "description": "Stack with bitwarden-rs container and an nightly backup routine."
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bitwarden.png",
+      "categories": [
+        "Utilities"
+      ],
+      "platform": "linux",
+      "repository": {
+        "url": "https://github.com/AndyYangUK/portainer_templates",
+        "stackfile": "stacks/bitwarden.yml"
+      },
+      "env": [
+        {
+          "name": "PORT",
+          "label": "PORT",
+          "default": "5430"
+        },
+        {
+          "name": "CRON_TIME",
+          "label": "CRON_TIME",
+          "default": "0 5 * * *"
+        },
+        {
+          "name": "UID",
+          "label": "UID",
+          "default": "1000"
+        },
+        {
+          "name": "GID",
+          "label": "GID",
+          "default": "100"
+        },
+        {
+          "name": "ADMIN_TOKEN",
+          "label": "ADMIN_TOKEN",
+          "default": "some_really_long_key"
+        },
+        {
+          "name": "DOMAIN",
+          "label": "DOMAIN",
+          "default": "https://bw.domain.com"
+        }
+      ]
+    },
+    {
       "type": 1,
       "title": "Bitwarden RS",
       "name": "bitwarden",
