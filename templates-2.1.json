@@ -391,6 +391,11 @@
           "default":"100"
         },
         {
+          "name":"APP_URL",
+          "label":"APP_URL",
+          "default":"bookstack.domain.com"
+        },
+        {
           "name":"TZ",
           "label":"TZ",
           "default":"Europe/London"
@@ -404,9 +409,24 @@
           "label":"MYSQL_ROOT_PASSWORD"
         },
         {
+          "name":"BS_VOLUME",
+          "label":"BS_VOLUME",
+          "default":"/portainer/AppData/Bookstack/Data"
+        },
+        {
+          "name":"DB_VOLUME",
+          "label":"DB_VOLUME",
+          "default":"/portainer/AppData/Bookstack/DB"
+        },
+        {
+          "name":"BACKUP_VOLUME",
+          "label":"BACKUP_VOLUME",
+          "default":"/portainer/AppData/Bookstack/DB_Backup"
+        },
+        {
           "name":"PORT",
           "label":"PORT",
-          "default":"3540"
+          "default":"6875"
         }
       ]
     },
