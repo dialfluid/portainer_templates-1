@@ -393,7 +393,7 @@
         {
           "name":"APP_URL",
           "label":"APP_URL",
-          "default":"bookstack.domain.com"
+          "default":"https://bookstack.domain.com"
         },
         {
           "name":"TZ",
