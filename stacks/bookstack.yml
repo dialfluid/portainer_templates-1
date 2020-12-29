@@ -2,7 +2,7 @@
 version: "2"
 services:
   bookstack:
-    image: ghcr.io/linuxserver/bookstack
+    image: ghcr.io/linuxserver/bookstack:version-v0.30.7
     container_name: bookstack
     environment:
       - PUID=${PUID}
@@ -21,7 +21,7 @@ services:
       - bookstack_db
 # https://medium.com/@ricardolsmendes/mysql-mariadb-with-scheduled-backup-jobs-running-in-docker-1956e9892e78
   bookstack_db:
-    image: ghcr.io/linuxserver/mariadb
+    image: ghcr.io/linuxserver/mariadb:version-110.4.17mariabionic
     container_name: bookstack_db
     environment:
       - PUID=${PUID}
