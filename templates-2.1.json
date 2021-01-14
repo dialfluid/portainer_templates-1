@@ -2176,29 +2176,27 @@
       },
       "env":[
         {
-          "name":"HTTP_PORT",
-          "label":"HTTP Port",
+          "name":"DB_VOLUME",
+          "label":"DB Volume",
+          "default":"/portainer/AppData/Matomo/DB"
+        },
+        {
+          "name":"MATOMO_VOLUME",
+          "label":"Matomo Volume",
+          "default":"/portainer/AppData/Matomo/"
+        },
+        {
+          "name":"PORT",
+          "label":"PORT",
           "default":"8088"
         },
         {
-          "name":"HTTPS_PORT",
-          "label":"HTTPS Port",
-          "default":"8089"
+          "name":"MYSQL_ROOT_PASSWORD",
+          "label":"MySQL Root Pass"
         },
         {
-          "name":"USERNAME",
-          "label":"Username",
-          "default":"User"
-        },
-        {
-          "name":"PASSWORD",
-          "label":"Password",
-          "default":"bitnami"
-        },
-        {
-          "name":"WEBSITE_NAME",
-          "label":"Website Name",
-          "default":"Example"
+          "name":"MYSQL_PASSWORD",
+          "label":"MySQL Pass"
         }
       ]
     },
