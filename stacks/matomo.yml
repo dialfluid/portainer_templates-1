@@ -24,6 +24,4 @@ services:
       - MYSQL_USER=matomo
     ports:
       - ${PORT}:80
-    depends_on:
-      - db
 
