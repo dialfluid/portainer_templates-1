@@ -2,7 +2,7 @@ version: "2"
 
 services:
   db:
-    image: mariadb
+    image: mariadb:latest
     command: --max-allowed-packet=64MB
     restart: always
     volumes:
@@ -13,7 +13,7 @@ services:
       - MYSQL_DATABASE=matomo
       - MYSQL_USER=matomo
   matomo:
-    image: matomo
+    image: matomo:latest
     restart: always
     volumes:
       - ${MATOMO_VOLUME}/html:/var/www/html
