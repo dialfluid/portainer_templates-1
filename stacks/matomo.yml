@@ -16,7 +16,7 @@ services:
     image: matomo:latest
     restart: always
     volumes:
-      - ${MATOMO_VOLUME}/html:/var/www/html
+      - ${MATOMO_VOLUME}:/var/www/html
     environment:
       - MATOMO_DATABASE_HOST=db
       - MYSQL_PASSWORD=${MYSQL_PASSWORD}
