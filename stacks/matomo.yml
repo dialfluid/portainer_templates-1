@@ -2,19 +2,24 @@ version: "2"
 
 services:
   db:
-    image: mariadb:latest
-    command: --max-allowed-packet=64MB
-    restart: always
-    volumes:
-      - ${DB_VOLUME}:/var/lib/mysql
+    image: ghcr.io/linuxserver/mariadb:version-110.4.17mariabionic
+    container_name: matomo_db
     environment:
+      - PUID=1000
+      - PGID=100
       - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
-      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+      - TZ=Europe/London
       - MYSQL_DATABASE=matomo
       - MYSQL_USER=matomo
-  matomo:
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+    volumes:
+      - ${DB_VOLUME}:/config
+    restart: unless-stopped
+
+  app:
     image: matomo:latest
-    restart: always
+    restart: unless-stopped
+    container_name: matomo_app
     volumes:
       - ${MATOMO_VOLUME}:/var/www/html
     environment:
@@ -26,3 +31,5 @@ services:
       - MATOMO_DATABASE_DBNAME=matomo
     ports:
       - ${PORT}:80
+   depends_on:
+      - db
