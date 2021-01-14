@@ -19,9 +19,10 @@ services:
       - ${MATOMO_VOLUME}:/var/www/html
     environment:
       - MATOMO_DATABASE_HOST=db
-      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
-      - MYSQL_DATABASE=matomo
-      - MYSQL_USER=matomo
+      - MATOMO_DATABASE_ADAPTER=mysql
+      - MATOMO_DATABASE_TABLES_PREFIX=matomo_
+      - MATOMO_DATABASE_USERNAME=matomo
+      - MATOMO_DATABASE_PASSWORD=${MYSQL_PASSWORD}
+      - MATOMO_DATABASE_DBNAME=matomo
     ports:
       - ${PORT}:80
-
