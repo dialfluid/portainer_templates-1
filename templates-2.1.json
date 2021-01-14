@@ -2187,7 +2187,7 @@
         },
         {
           "name":"PORT",
-          "label":"PORT",
+          "label":"Port",
           "default":"8088"
         },
         {
