@@ -2183,7 +2183,7 @@
         {
           "name":"MATOMO_VOLUME",
           "label":"Matomo Volume",
-          "default":"/portainer/AppData/Matomo/"
+          "default":"/portainer/AppData/Matomo/App"
         },
         {
           "name":"PORT",
