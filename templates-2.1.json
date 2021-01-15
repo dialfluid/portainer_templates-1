@@ -3587,7 +3587,7 @@
           "default":"elastic"
         },
         {
-          "name":"ROUNDCUBEMAIL_DEFAULT_HOST,
+          "name":"ROUNDCUBEMAIL_DEFAULT_HOST",
           "label":"ROUNDCUBEMAIL_DEFAULT_HOST",
           "default":"tls://mail.example.org"
         },
