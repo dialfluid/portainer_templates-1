@@ -3578,22 +3578,22 @@
       "env":[
         {
           "name":"ROUNDCUBEMAIL_DB_TYPE",
-          "label":"ROUNDCUBEMAIL_DB_TYPE",
+          "label":"DB Type",
           "default":"sqlite"
         },
         {
           "name":"ROUNDCUBEMAIL_SKIN",
-          "label":"ROUNDCUBEMAIL_SKIN",
+          "label":"Skin",
           "default":"elastic"
         },
         {
           "name":"ROUNDCUBEMAIL_DEFAULT_HOST",
-          "label":"ROUNDCUBEMAIL_DEFAULT_HOST",
+          "label":"Default Host",
           "default":"tls://mail.example.org"
         },
         {
           "name":"ROUNDCUBEMAIL_SMTP_SERVER",
-          "label":"ROUNDCUBEMAIL_SMTP_SERVER",
+          "label":"SMTP Server",
           "default":"tls://mail.example.org"
         }
       ]
