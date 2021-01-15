@@ -3553,6 +3553,53 @@
     },
     {
       "type":1,
+      "title":"Roundcube Mail",
+      "name":"roundcubemail",
+      "description":"Roundcube webmail container with sqlite db.",
+      "image":"roundcube/roundcubemail:latest",
+      "categories":[
+        "Mail"
+      ],
+      "platform":"linux",
+      "restart_policy":"unless-stopped",
+      "ports":[
+        "9002:80"
+      ],
+      "volumes":[
+        {
+          "container":"/var/www/html",
+          "bind":"/portainer/AppData/Roundcube/App"
+        },
+        {
+          "container":"/var/roundcube/db",
+          "bind":"/portainer/AppData/Roundcube/DB"
+        }
+      ],
+      "env":[
+        {
+          "name":"ROUNDCUBEMAIL_DB_TYPE",
+          "label":"ROUNDCUBEMAIL_DB_TYPE",
+          "default":"sqlite"
+        },
+        {
+          "name":"ROUNDCUBEMAIL_SKIN",
+          "label":"ROUNDCUBEMAIL_SKIN",
+          "default":"elastic"
+        },
+        {
+          "name":"ROUNDCUBEMAIL_DEFAULT_HOST,
+          "label":"ROUNDCUBEMAIL_DEFAULT_HOST",
+          "default":"tls://mail.example.org"
+        },
+        {
+          "name":"ROUNDCUBEMAIL_SMTP_SERVER",
+          "label":"ROUNDCUBEMAIL_SMTP_SERVER",
+          "default":"tls://mail.example.org"
+        }
+      ]
+    },
+    {
+      "type":1,
       "title":"SABnzbd",
       "name":"sabnzbd",
       "description":"SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction.",
