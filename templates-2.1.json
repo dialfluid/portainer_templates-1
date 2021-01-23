@@ -291,7 +291,7 @@
         },
         {
           "container": "/backup",
-          "bind": "/home/andy/backup"
+          "bind": "/portainer/AppData/Bitwarden-rs/DB-Backup"
         }
       ],
       "env": [
@@ -304,16 +304,6 @@
           "name": "CRON_TIME",
           "label": "CRON_TIME",
           "default": "0 5 * * *"
-        },
-        {
-          "name": "UID",
-          "label": "UID",
-          "default": "100"
-        },
-        {
-          "name": "GID",
-          "label": "GID",
-          "default": "100"
         }
       ]
     },
