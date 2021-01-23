@@ -9,7 +9,6 @@ services:
     volumes:
       - /portainer/AppData/Bitwarden-rs/Data:/data
     environment:
-      ADMIN_TOKEN: ${ADMIN_TOKEN}
       DOMAIN: ${DOMAIN}
     ports: [
       '${PORT}:80/tcp'
@@ -20,10 +19,4 @@ services:
     restart: always
     volumes:
       - /portainer/AppData/Bitwarden-rs/Data:/data
-      - /portainer/AppData/Bitwarden-rs/DB-Backup:/backup
-    environment:
-      BACKUP_FILE: /backup/db.sqlite3
-      CRON_TIME: ${CRON_TIME}
-      UUID: ${UUID}
-      GID: ${GID}
     
