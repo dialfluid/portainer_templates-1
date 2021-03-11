@@ -3084,6 +3084,18 @@
         "1010:80/tcp",
         "4443:443/tcp"
       ],
+      "env": [
+        {
+          "name": "WEBPASSWORD",
+          "label": "WEBPASSWORD",
+          "default": "^y6yL5LY*4go^o"
+        },
+        {
+          "name": "TZ",
+          "label": "TZ",
+          "default": "Europe/London"
+        },        
+      ],
       "volumes": [
         {
           "container": "/etc/pihole",
